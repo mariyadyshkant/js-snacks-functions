@@ -4,16 +4,15 @@ const userName = 'Mario';
 
 
 // Dichiara la funzione qui.
-function greetUser(name) {
-    const userName = "";
-    const greet = (`Ciao %{userName}`);
+function greet(name) {
+    const greet = `Ciao ${name}`;
     return greet;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-greetUser();
-console.log(greetUser());
-
-
+greet();
+console.log(greet()); // Ciao undefined
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
+const greetUser = greet(userName);
+console.log(greet(userName)); // Ciao Mario
