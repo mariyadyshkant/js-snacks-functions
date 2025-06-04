@@ -19,11 +19,11 @@ function greet(name) {
     let hours = new Date().getHours();
     let greet = "";
     if (hours < 13) {
-        greet = `Buongiorno ${name}`;
+        greet = `Buongiorno ${name}!`;
     } else if (hours <= 17 && hours >= 13) {
-        greet = `Buon pomeriggio ${name}`;
+        greet = `Buon pomeriggio ${name}!`;
     } else {
-        greet = `Buonasera ${name}`;
+        greet = `Buonasera ${name}!`;
     }
     return greet;
 }
