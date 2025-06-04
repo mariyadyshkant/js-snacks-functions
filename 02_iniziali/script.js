@@ -9,7 +9,7 @@ function nameInitials(array) {
     for (let i = 0; i < array.length; i++) {
         const name = array[i];
         const initial = name[0];
-        initials.push(initial);
+        initials.push(initial.toUpperCase());
     }
     return initials;
 }
