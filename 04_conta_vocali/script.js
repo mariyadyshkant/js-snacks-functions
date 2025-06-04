@@ -1,7 +1,7 @@
 /* Scrivi una funzione che accetti una stringa e restituisca il numero di vocali contenute al suo interno */
 
 const word = 'javascript';
-
+// word.length = 10 --> farò 10 iterazioni con il ciclo for
 
 
 // Dichiara la funzione qui.
@@ -10,9 +10,16 @@ function numberOfVocals(word) {
     const vocals = ["a", "e", "i", "o", "u"];
     for (let i = 0; i < word.length; i++) {
         const thisLetter = word[i];
-        if (vocals.includes(thisLetter.toLowerCase())) {
-            vocalsOfString.push(thisLetter);
+        for (let j = 0; j < vocals.length; j++) {
+
+            console.log('if (' + vocals[j] + ' == ' + thisLetter + ')');
+
+            if (vocals[j] === thisLetter) {
+                vocalsOfString.push(thisLetter);
+            }
         }
+        console.log(`------ FINE CICLO (${i + 1})`);
+
     }
     return vocalsOfString.length, (vocalsOfString);
 }
@@ -26,5 +33,4 @@ console.log(vocalsOfJavascript);
 
 
 
-// if (thisLetter === thisVocal) {
-//  const thisVocal = vocals[i];
+// ALTERNATIVA: if (vocals.includes(thisLetter.toLowerCase())) {}
