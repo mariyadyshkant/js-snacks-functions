@@ -29,3 +29,18 @@ console.log(namesWithInitialA);
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+
+//------------------------BONUS-------------------------
+
+const filterByInitial = (array, letter) => {
+    const wordsArray = [];
+    for (let i = 0; i < array.length; i++) {
+        const thisWord = array[i];
+        const wordInitial = thisWord[0];
+        if (wordInitial.toUpperCase() === letter.toUpperCase()) {
+            wordsArray.push(thisWord);
+        }
+    }
+    return wordsArray;
+}
+console.log(filterByInitial(names, "A"));

@@ -20,3 +20,16 @@ console.log(initials);
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
+//------------------------BONUS-------------------------
+
+const nameIniTials = array => {
+    const initials = [];
+    for (let i = 0; i < array.length; i++) {
+        const name = array[i];
+        const initial = name[0];
+        initials.push(initial.toUpperCase());
+    }
+    return initials;
+}
+console.log(nameIniTials(names));

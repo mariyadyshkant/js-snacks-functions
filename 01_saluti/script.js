@@ -16,3 +16,8 @@ console.log(greet()); // Ciao undefined
 //Risultato atteso se si passa 'Mario': // ciao Mario
 const greetUser = greet(userName);
 console.log(greet(userName)); // Ciao Mario
+
+//------------------------BONUS-------------------------
+
+const greetName = name => `Ciao ${name}`;
+console.log(greetName(userName));
