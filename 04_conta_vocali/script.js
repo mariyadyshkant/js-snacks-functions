@@ -31,6 +31,17 @@ console.log(vocalsOfJavascript);
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
 
+//------------------------BONUS-------------------------
+const howManyVowels = word => {
+    const vowelsOfString = [];
+    const vowels = ["a", "e", "i", "o", "u"];
+    for (let i = 0; i < word.length; i++) {
+        const thisLetter = word[i];
+        if (vowels.includes(thisLetter.toLowerCase())) {
+            vowelsOfString.push(thisLetter);
+        }
+    }
+    return vowelsOfString.length, (vowelsOfString);
+}
 
-
-// ALTERNATIVA: if (vocals.includes(thisLetter.toLowerCase())) {}
+console.log(howManyVowels(word));

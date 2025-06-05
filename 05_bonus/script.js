@@ -34,3 +34,20 @@ console.log(greetName);
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
+
+//------------------------BONUS-------------------------
+
+const greetByHours = name => {
+    let hours = new Date().getHours();
+    let greet = "";
+    if (hours < 13) {
+        greet = `Buongiorno ${name}!`;
+    } else if (hours <= 17 && hours >= 13) {
+        greet = `Buon pomeriggio ${name}!`;
+    } else {
+        greet = `Buonasera ${name}!`;
+    }
+    return greet;
+}
+
+console.log(greetByHours(personName));
